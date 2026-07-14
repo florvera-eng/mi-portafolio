@@ -1,0 +1,148 @@
+/* Inicio */
+#inicio {
+  padding-top: 80px;   /* para que no choque con el navbar fijo */
+  padding-bottom: 40px; /* menos espacio abajo */
+}
+
+/* Modo claro/oscuro */
+.modo-claro {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.modo-oscuro {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+/* Cuadros */
+.cuadro {
+  background-color: #1e1e2f; /* fondo oscuro */
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.cuadro-pink {
+  background-color: pink;
+  padding: 60px 0;
+  border-radius: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 100%;
+  margin: 0;
+}
+
+/* Listas e íconos */
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+i {
+  font-size: 2rem;
+  margin-right: 10px;
+  vertical-align: middle;
+  color: #e83e8c; /* rosa por defecto */
+}
+
+/* Colores específicos por red */
+.fa-linkedin {
+  color: #0a66c2; /* azul LinkedIn */
+}
+.fa-github {
+  color: #333; /* gris oscuro GitHub */
+}
+.fa-envelope {
+  color: #d63384; /* rosa más oscuro */
+}
+
+/* Clase personalizada para Bootstrap violeta */
+.text-purple {
+  color: #6f42c1; /* violeta elegante */
+}
+
+/* Cards */
+.card-body {
+  background-color: #f8f9fa; /* gris claro */
+}
+.card-title {
+  color: #e83e8c; /* rosa */
+}
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card-img-top {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Botones */
+.btn {
+  border-radius: 8px;
+}
+
+/* Botones principales */
+.btn-success,
+.btn-primary,
+.btn-info,
+.btn-warning,
+.btn-danger {
+  background-color: #e83e8c;
+  border-color: #e83e8c;
+  color: #fff;
+}
+
+.btn-success:hover,
+.btn-primary:hover,
+.btn-info:hover,
+.btn-warning:hover,
+.btn-danger:hover {
+  background-color: #d63384;
+  border-color: #d63384;
+  color: #fff;
+}
+
+/* Botones outline */
+.btn-outline-success,
+.btn-outline-primary,
+.btn-outline-info,
+.btn-outline-warning,
+.btn-outline-danger {
+  color: #e83e8c;
+  border-color: #e83e8c;
+}
+
+.btn-outline-success:hover,
+.btn-outline-primary:hover,
+.btn-outline-info:hover,
+.btn-outline-warning:hover,
+.btn-outline-danger:hover {
+  background-color: #e83e8c;
+  color: #fff;
+}
+
+/* Inputs */
+.input-group-text {
+  background-color: #f8f9fa;
+  color: #212529;
+  border: 1px solid #ced4da;
+}
+
+/* Botón scroll-to-top */
+#btnTop {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+}

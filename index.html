@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+<body>
+
+  <!-- Navbar -->
+<nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Mi Portafolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+      <!-- Botón modo oscuro/claro -->
+      <button id="btn-modo" class="btn btn-outline-dark ms-2" onclick="toggleModo()">
+        🌙 Modo oscuro
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+ <!-- Inicio -->
+<section id="inicio" class="d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center cuadro-pink">
+      
+      <!-- Columna de texto -->
+      <div class="col-md-6 text-center text-md-start">
+        <h1>Hola, soy <span class="text-danger">Florencia Vera Cristaldo</span></h1>
+        <h3>Estudiante de Ingeneria Informatica</h3>
+        <p>Me apasiona crear sitios web modernos, funcionales y con experiencias increíbles para los usuarios.</p>
+        <a href="#proyectos" class="btn btn-success">Ver mis proyectos</a>
+        <a href="cv.pdf" class="btn btn-outline-success" download>Descargar CV</a>
+      </div>
+
+      <!-- Columna de imagen + iconos -->
+      <div class="col-md-6 text-center">
+        <img src="https://i.pinimg.com/736x/03/fb/af/03fbaf16bd269eaf436fdb3d8336ce6c.jpg" 
+             class="rounded-circle img-fluid" style="max-width:300px;" alt="Foto perfil">
+        <div class="mt-3">
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
+          <a href="https://github.com" target="_blank"><i class="fab fa-github fa-2x mx-2"></i></a>
+          <a href="mailto:florencia@example.com"><i class="fas fa-envelope fa-2x mx-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre-habilidades" class="container my-3">
+  <div class="row align-items-start">
+    
+    <!-- Sobre mí a la izquierda -->
+    <div class="col-md-6">
+      <h2 class="mb-4"><i class="fas fa-user me-2"> </i> Sobre mi</h2>
+      <p>
+       Actualmente estoy estudiando la carrera y voy en el tercer año en la Universidad del Norte 
+       (UniNorte). Me encanta estar aprendiendo nuevas tecnologias y proyectos que ayudan de alguna manera 
+       a la resolucion de problemas reales. Disfruto programar y enfrentar desafios que aparece dia a dia.
+      </p>
+      <a href="#contacto" class="btn btn-primary">Más información</a>
+    </div>
+
+    <!-- Habilidades a la derecha -->
+    <div class="col-md-6">
+    <h2 class="mb-4"><i class="fas fa-code me-2"></i>Habilidades</h2>
+      <ul class="list-inline">
+        <li class="list-inline-item"><i class="fab fa-html5 fa-2x text-danger"></i> HTML5</li>
+        <li class="list-inline-item"><i class="fab fa-css3-alt fa-2x text-primary"></i> CSS3</li>
+        <li class="list-inline-item"><i class="fab fa-bootstrap fa-2x text-primary"></i> Bootstrap</li>
+        <li class="list-inline-item"><i class="fab fa-js fa-2x text-warning"></i> JavaScript</li>
+        <li class="list-inline-item"><i class="fab fa-git-alt fa-2x text-danger"></i> Git</li>
+        <li class="list-inline-item"><i class="fab fa-github fa-2x text-dark"></i> GitHub</li>
+        <li class="list-inline-item"><i class="fas fa-code fa-2x text-info"></i> Visual Studio Code</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Proyectos -->
+ <section id="proyectos" class="container py-5">
+  <h2 class="mb-4  text-center"><i class="fas fa-briefcase me-2"></i>Proyectos</h2>
+  <div class="row">
+    
+    <!-- Proyecto 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow h-100">
+       <img src="calculadora..png" class="card-img-top img-fluid "alt="Calculadora Web"style="max-width:160px;">
+        <div class="card-body">
+          <h5 class="card-title">Calculadora Web</h5>
+          <p class="card-text">Calculadora básica desarrollada con HTML, CSS, Bootstrap y JavaScript.</p>
+          <a href="#" class="btn btn-success">Ver demo</a>
+          <a href="#" class="btn btn-outline-success">Código</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow h-100">
+        <img src="restaurante.png" class="card-img-top img-fluid "alt="Restaurante Web"style="max-width:160px;">
+        <div class="card-body">
+          <h5 class="card-title">Restaurante Web</h5>
+          <p class="card-text"> Restaurante La Buena Mesa  muestra el menú del día
+             dividido en tres secciones: Entradas, Platos principales, Postres y bebidas</p>
+          <a href="#" class="btn btn-success">Ver demo</a>
+          <a href="#" class="btn btn-outline-success">Código</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyecto 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow h-100">
+       <img src="Inicio de sesion.png" class="card-img-top img-fluid "alt=" Inicio de Sesion"style="max-width:160px;">
+        <div class="card-body">
+          <h5 class="card-title">Inicio de sesion web</h5>
+          <p class="card-text">Interfaz de inicio de sesión creada con HTML y CSS,
+           diseñada para que el usuario ingrese sus credenciales y acceda al sistema</p>
+          <a href="#" class="btn btn-success">Ver demo</a>
+          <a href="#" class="btn btn-outline-success">Código</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Contacto -->
+<section id="contacto" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contacto</h2>
+    <form id="formContacto" class="mx-auto" style="max-width:900px;">
+      
+      <!-- Nombre y correo en la misma fila -->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Tu nombre</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+            <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="correo" class="form-label">Tu correo electrónico</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+            <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com" required>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mensaje ocupa toda la fila -->
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Tu mensaje</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="fas fa-comment-dots"></i></span>
+          <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </div>
+      </div>
+
+      <!-- Aviso de campos obligatorios -->
+      <div class="alert alert-warning text-center" role="alert">
+        Todos los campos son obligatorios.
+      </div>
+
+      <!-- Botón -->
+      <button type="submit" class="btn btn-danger">Enviar mensaje</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 position-relative">
+  <div class="container">
+    <p>© 2024 Florencia Vera Cristaldo. Todos los derechos reservados.</p>
+    <!-- Botón scroll to top -->
+    <button onclick="scrollToTop()" id="btnTop" class="btn btn-warning">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </div>
+</footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
